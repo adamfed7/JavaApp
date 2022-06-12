@@ -18,7 +18,6 @@ public class Product {
 
     private String name;
     private int quantity;
-    private LocalDateTime expirationDate;
     @ManyToOne
     @JoinColumn(name = "category")
     private ProductCategory category;

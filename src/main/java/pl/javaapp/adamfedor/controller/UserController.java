@@ -3,8 +3,6 @@ package pl.javaapp.adamfedor.controller;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import pl.javaapp.adamfedor.model.User;
-import pl.javaapp.adamfedor.repository.ProductCategoryRepository;
-import pl.javaapp.adamfedor.repository.ProductRepository;
 import pl.javaapp.adamfedor.service.UserService;
 
 import java.util.List;
@@ -14,8 +12,6 @@ import java.util.List;
 @AllArgsConstructor
 public class UserController {
     private final UserService userService;
-    private final ProductRepository productRepository;
-    private final ProductCategoryRepository productCategoryRepository;
 
     @GetMapping
     public List<User> getAllUsers() {
